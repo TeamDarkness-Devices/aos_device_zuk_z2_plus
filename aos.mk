@@ -20,11 +20,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2_plus device
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
-# Inherit some common stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common ATMOIC-OS stuff.
+$(call inherit-product, vendor/aos/config/common.mk)
+$(call inherit-product, vendor/aos/config/telephony.mk)
+$(call inherit-product, vendor/aos/config/version.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosip_z2_plus
+PRODUCT_NAME := aos_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_BRAND := ZUK
 PRODUCT_MODEL := Z2 Plus
