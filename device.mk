@@ -40,3 +40,9 @@ PRODUCT_PACKAGES += \
 
 # MSM8996 Headers
 PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
+
+# OTA Configs
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.ota.romname=Atomic-OS \
+ro.ota.version=$(shell date +"%Y%m%d") \
+ro.ota.manifest=https://raw.githubusercontent.com/TeamDarkness-Devices/ota_devices/master/z2_plus.xml
