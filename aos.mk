@@ -25,6 +25,9 @@ $(call inherit-product, vendor/aos/config/common.mk)
 $(call inherit-product, vendor/aos/config/telephony.mk)
 $(call inherit-product, vendor/aos/config/version.mk)
 
+#Atomic
+WITH_MUSICFX := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aos_z2_plus
 PRODUCT_DEVICE := z2_plus
