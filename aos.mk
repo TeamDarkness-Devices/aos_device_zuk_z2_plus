@@ -27,6 +27,7 @@ $(call inherit-product, vendor/aos/config/version.mk)
 
 #Atomic
 WITH_MUSICFX := true
+AOS_BUILD_TYPE := PLASMA
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aos_z2_plus
