@@ -39,8 +39,8 @@ vendor/lib/libchromatix_s5k2m8sx_preview.so
 vendor/lib/libchromatix_s5k2m8sx_cpp_video.so
 
 # Camera configs
-etc/camera/msm8996_camera.xml
-etc/camera/s5k2m8sx_chromatix.xml
+etc/camera/msm8996_camera.xml:vendor/etc/camera/msm8996_camera.xml
+etc/camera/s5k2m8sx_chromatix.xml:vendor/etc/camera/s5k2m8sx_chromatix.xml
 
 # Camera libs
 vendor/lib/libmmcamera_onsemi_cat24c64_eeprom.so
